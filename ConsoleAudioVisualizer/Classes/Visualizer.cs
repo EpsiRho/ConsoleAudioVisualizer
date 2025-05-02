@@ -7,7 +7,7 @@ namespace ConsoleAudioVisualizer.Classes
 {
     public static class Visualizer
     {
-        // Device selection (Unused unless your audio isn't coming through your default windows device, which if it isn't you've probably fucked something up)
+        // Device selection
         private static MMDevice _audioDevice;
         public static void SelectDevice()
         {
