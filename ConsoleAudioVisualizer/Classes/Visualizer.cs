@@ -119,6 +119,7 @@ namespace ConsoleAudioVisualizer.Classes
             _magnitudes = FFT.Magnitude(_spectrum);
 
             // Take our magnitudes and find the actual min and max
+            // This is currently not used, but it could be used to scale the visualizer to show more or less of the range, or could be used to normalize volume (One song louder than another)
             foreach (double m in _magnitudes)
             {
                 _maxMagnitude = Math.Max(_maxMagnitude, m);
